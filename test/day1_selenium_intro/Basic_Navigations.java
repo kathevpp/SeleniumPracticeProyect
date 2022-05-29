@@ -13,6 +13,9 @@ public class Basic_Navigations {
         // 2. Create instance of WebDriver
         WebDriver driver = new ChromeDriver();
 
+        // 3. Make our page full screen
+        driver.manage().window().maximize();
+
         driver.get("https://www.etsy.com");
         //another way to write
 
@@ -32,8 +35,13 @@ public class Basic_Navigations {
 
         System.out.println("Tesla page driver.getTitle() = " + driver.getTitle());
         System.out.println("driver.getCurrentUrl() = " + driver.getCurrentUrl());
+        System.out.println("Tesla page driver.getTitle() = " + driver.getTitle());
 
+
+        // this will closed the currently opened page
         driver.close();
+
+        // driver.quit();
 
 
         // String currentTitle = driver.getTitle();
