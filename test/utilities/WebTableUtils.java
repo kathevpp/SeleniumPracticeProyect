@@ -17,6 +17,8 @@ public class WebTableUtils {
     public static String returnOrderDate(WebDriver driver, String customerName) {
         String locator = "//td[.='" + customerName + "']//following-sibling::td[.='12/31/2021']";
         WebElement customerDateCell = driver.findElement(By.xpath(locator));
+
+
         return customerDateCell.getText();
     }
 }

@@ -32,10 +32,10 @@ public class T2_WebtablePractice extends TestBase {
 
         WebElement dateOrder = driver.findElement(By.xpath("//table[@id='ctl00_MainContent_orderGrid']//td[.='Bob Martin']//following-sibling::td[3]"));
 
-        String expectedDate = "12/31/2021";
+        String expectedOrderDate = "12/31/2021";
         String actualDate = dateOrder.getText();
 
-        Assert.assertEquals(actualDate.contains(expectedDate), "Invalid date");
+        Assert.assertEquals(actualDate.contains(expectedOrderDate), "Invalid date");
     }
 
 }
